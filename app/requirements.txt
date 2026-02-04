@@ -17,7 +17,7 @@ feedparser
 beautifulsoup4
 
 # Depends on
-# git+https://github.com/Tracardi/tracardi.git@1.1.x
+git+https://github.com/Tracardi/tracardi.git@1.1.x
 # git+https://github.com/Tracardi/deferpy.git@1.1.x
 
 # Old

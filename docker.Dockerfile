@@ -28,19 +28,20 @@ COPY uix uix/
 
 # Prepare in CD from REPO tracardi/deferpy
 # +:defer => defer
-COPY defer defer/
+#COPY defer defer/
 
 # Prepare in CD from REPO tracardi/doumentation
 # +:docs => docs
-COPY docs docs/
+#COPY docs docs/
 
 # Prepare in CD - from tracardi/tracardi
 # +:. => tracardi
 COPY tracardi/tracardi tracardi
+#COPY tracardi tracardi
 
 RUN pip --default-timeout=240 install -r tracardi/requirements.txt
 RUN pip --default-timeout=240 install -r app/requirements.txt
-RUN pip --default-timeout=240 install -r defer/requirements.txt
+#RUN pip --default-timeout=240 install -r defer/requirements.txt
 
 # Start up
 
